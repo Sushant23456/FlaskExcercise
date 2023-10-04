@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3>Registered Users</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Organization</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, organization in students.items() %}
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ organization }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

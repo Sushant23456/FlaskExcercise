@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h3>Enter an Integer</h3>
+<p>Type a number to find out if it's even or odd</p>
+<form method="GET" action="/result">
+    <div class="form-group">
+        <input type="text" name="number" class="form-control" placeholder="Enter an integer">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{% if message %}
+    <h3>{{ message }}</h3>
+{% else %}
+    <h3>No number provided</h3>
+{% endif %}
+<a href="/" class="btn btn-primary mt-3">Go back to Home</a>
+{% endblock %}
